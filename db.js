@@ -6,15 +6,30 @@ const getRandomInt = (min, max) => {
 };
 
 module.exports = () => {
-  const data = { users: [] };
+  const data = {
+    users: [],
+    companies: []
+  };
 
   // Create 1000 users
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 1; i <= 1000; i++) {
     data.users.push({
       id: i,
       firstName: faker.name.firstName(),
-      age: getRandomInt(18, 60)
+      age: getRandomInt(18, 60),
+      // Associate company with user
+      companyId: getRandomInt(1, 50)
     });
   }
+
+  // Create 50 companies
+  for (let i = 1; i <= 50; i++) {
+    data.companies.push({
+      id: i,
+      name: faker.company.companyName(),
+      description: faker.company.catchPhrase()
+    });
+  }
+
   return data;
 };
