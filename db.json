@@ -86,7 +86,7 @@
     },
     {
       "id": 15,
-      "firstName": "Ed",
+      "firstName": "SoyLaRiata",
       "age": 52,
       "companyId": 5
     },
@@ -599,11 +599,6 @@
       "firstName": "Leola",
       "age": 50,
       "companyId": 4
-    },
-    {
-      "firstName": "Edgar",
-      "age": 29,
-      "id": 101
     }
   ],
   "companies": [
