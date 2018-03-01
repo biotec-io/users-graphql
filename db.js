@@ -16,7 +16,7 @@ function generateJsonDB() {
   };
 
   // Create 1000 users
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 10000; i++) {
     data.users.push({
       id: i,
       firstName: faker.name.firstName(),
@@ -27,7 +27,7 @@ function generateJsonDB() {
   }
 
   // Create 50 companies
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 50; i++) {
     data.companies.push({
       id: i,
       name: faker.company.companyName(),
